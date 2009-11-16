@@ -1,0 +1,8 @@
+config/core.php
+config/database.php
+tmp/*
+
+# ignore eclipse files
+.buildpath
+.project
+.settings/

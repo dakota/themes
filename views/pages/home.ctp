@@ -32,6 +32,13 @@ endif;
 	endif;
 ?>
 </p>
+<h3><?php __('Theme ShowCase does not use a database') ?></h3>
+<br/>
+<p>
+<?php
+	echo sprintf(__('Go to the '. $this->Html->link('Theme Showcases', array('controller'=>'showcases'))));
+?>
+</p>
 <p>
 <?php
 	$filePresent = null;
@@ -71,12 +78,3 @@ if (!empty($filePresent)):
 ?>
 </p>
 <?php endif;?>
-<h3><?php __('Editing this Page') ?></h3>
-<p>
-<?php
-	echo sprintf(__('To change the content of this page, edit: %s
-		To change its layout, edit: %s
-		You can also add some CSS styles for your pages at: %s', true),
-		APP . 'views' . DS . 'pages' . DS . 'home.ctp.<br />',  APP . 'views' . DS . 'layouts' . DS . 'default.ctp.<br />', APP . 'webroot' . DS . 'css');
-?>
-</p>
