@@ -29,7 +29,6 @@
 		echo $html->meta('icon');
 
 		echo $html->css('cake.generic');
-
 		echo $scripts_for_layout;
 	?>
 </head>
@@ -41,7 +40,7 @@
 		<div id="content">
 
 			<?php $session->flash(); ?>
-
+			<h3>This is the default layout from the app</h3>
 			<?php echo $content_for_layout; ?>
 
 		</div>
